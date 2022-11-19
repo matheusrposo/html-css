@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio01</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.25em;
+            background-color: salmon;
+            text-align: center;
+        }
+
+        table{
+            width: 400px;
+            margin: auto;
+            border-collapse: collapse;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.342);
+        }
+
+        td{
+            padding: 6px;
+            border: 1px solid black;
+        }
+
+        th{
+            padding: 6px;
+            border: 1px solid black;
+            background-color: #73fab2;
+        }
+
+        h1{
+            margin-bottom: 25px;
+        }
+
+        table#filmes  td:hover{
+            background-color: rgb(194, 98, 87);
+            color: white;
+            font-weight: bold;
+            transition-duration: 0.25s;
+        }
+
+        table#filmes{
+            width: 800px;
+        }
+
+        td.nomes{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio 01</h1>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+    <h1>Desafio 02</h1>
+    <table>
+        <tr>
+            <td colspan="4">a</td>
+            <td rowspan="4">b</td>
+        </tr>
+        <tr>
+            <td rowspan="4">c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+        <tr>
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+        </tr>
+        <tr>
+            <td>j</td>
+            <td>l</td>
+            <td>m</td>
+        </tr>
+        <tr>
+            <td colspan="4">n</td>
+        </tr>
+    </table>
+    <h1>Desafio 03</h1>
+    <caption>Filmes Favoritos</caption>
+    <table id="filmes">
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nome</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td class="nomes">Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Se eu fosse você</td>
+            </tr>
+            <tr>
+                <td class="nomes">Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Carros 3</td>
+            </tr>
+            <tr>
+                <td class="nomes">Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>2012</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td class="nomes">Bruno Mendonça</td>
+                <td>Intocaveis</td>
+                <td>Amnesia</td>
+                <td>Startrek</td>
+            </tr>
+            <tr>
+                <td class="nomes">Daniel Loures</td>
+                <td>A viagem de chihiro</td>
+
+                <td>Wall-e</td>
+                <td>Kung fu Panda</td>
+            </tr>
+            <tr>
+                <td>Matheus Raposo</td>
+                <td>Ultimo Samurai</td>
+                <td>Pantera Negra</td>
+                <td>Soul</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
