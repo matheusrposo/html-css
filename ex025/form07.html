@@ -13,6 +13,37 @@
     </style>
 </head>
 <body>
-    <form action=""></form>
+    <form action="cadastro.php" method="get">
+        <div>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iest">
+                <option value="" selected>--Escolha--</option>
+                <optgroup label="Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="MA">Maranhao</option>
+                    <option value="BA">Bahia</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option value="ADM">Administrador</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Sugestões..."></textarea>
+        </div>
+    </form>
 </body>
 </html>
