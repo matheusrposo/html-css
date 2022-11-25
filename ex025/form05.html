@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Esporte</legend>
+            <div>
+                <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+                <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label>  <br>
+                <input type="checkbox" name="esfur" id="iesfut"> <label for="iesfut">Futebol</label> 
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Gênero</legend>
+            <div>
+                <input type="radio" name="gen" id="igenmas"> <label for="igenmas">Masculino</label> <br>
+                <input type="radio" name="gen" id="igenfem"> <label for="igenfem">Feminino</label>
+            </div>
+        </fieldset>
+        <div>
+            <h1>Gostou do nosso produto?</h1>
+            <input type="radio" name="ava" id="iavasim" checked> <label for="iavasim">Sim</label>
+            <input type="radio" name="ava" id="iavanao"> <label for="iavanao">Não</label>
+        </div>
+        <div>
+            <input type="submit" value="Enviarar">
+        </div>
+    </form>
+</body>
+</html>
