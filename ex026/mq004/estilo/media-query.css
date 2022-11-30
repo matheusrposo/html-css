@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/*
+Pequenas telas: - 640px
+Mobile: 640px - 768px
+Tablet: 768px - 1024px
+Desktop: 1024px - 1536px
+Grandes telas: 1536px - 
+*/
+
+@media print{
+    main{
+        border: 2px solid black;
+        width: 90vw;
+        height: 90vh;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        text-decoration: overline;
+        content: "Essa impressão foi feita através do site www.ooooooo.com.br";
+    }
+    
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1536px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1536px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+}
