@@ -21,7 +21,7 @@ header > h1{
     text-align: center;
 }
 
-span.material-symbols-outlined {
+span#burguer {
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -35,7 +35,7 @@ span.material-symbols-outlined {
     cursor: pointer;
 }
   
-span.material-symbols-outlined:hover{
+span#burguer:hover{
     background-color: rgb(76, 218, 182);
     
     color: white;
@@ -47,6 +47,8 @@ span.material-symbols-outlined:hover{
 
 menu{
     display: none;
+    background-color: rgb(79, 255, 211);
+    padding: 5px 5px 0px 5px; 
 }
 
 menu > ul{
